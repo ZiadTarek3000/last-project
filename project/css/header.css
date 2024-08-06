@@ -1,0 +1,87 @@
+.head-top a,
+p {
+  font-size: 1rem;
+}
+
+.main-bck {
+  background-color: #0c65ed !important;
+}
+
+/* Uncomment if needed
+.head-top {
+  display: none !important;
+}
+
+header {
+  height: 100vh;
+  background-color: aqua !important;
+}
+*/
+
+.nav-item a {
+  color: #000 !important;
+  padding-bottom: 1rem !important;
+}
+
+.nav-item a:hover {
+  color: #0c65ed !important;
+}
+
+.nav-parent {
+  position: relative; 
+  z-index: 3;
+}
+
+.nav-parent a {
+  font-size: 1rem !important;
+  padding: 5px !important;
+  font-weight: 600;
+}
+
+.nav-parent ul a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.transparent-menu li {
+  padding: 0.5rem 1.5rem !important;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.transparent-menu li:last-child {
+  border-bottom: none;
+}
+
+.nav-parent:hover .transparent-menu {
+  transform: translateX(0); 
+  opacity: 1; 
+  visibility: visible; 
+}
+
+.nav-parent .transparent-menu {
+  transform: translateX(-20%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  background-color: #FFF;
+  min-width: 190px;
+  width: auto;
+  top: 100%; /* Position directly below the parent */
+  left: 0;
+  padding: 0;
+  position: absolute;
+  list-style: none;
+  border-top: 2px solid #0c65ed;
+}
+
+.nav-parent::after {
+  content: "";
+  display: block;
+  padding-top: 30px;
+}
+
+
+
+
+
+
